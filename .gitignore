@@ -135,3 +135,5 @@ instance.json
 .mixin.out/class/net/minecraft/client/particle/ParticleEngine.class
 .mixin.out/class/net/minecraft/client/particle/SingleQuadParticle.class
 config/skyblockbuilder/data/dimensions.txt
+/.github/agents
+command_history.txt
