@@ -1,5 +1,5 @@
 {
-    "name": "Echoes Of Eternity",
+    "name": "Echoes of Eternity",
     "version": "0.0.1",
     "description": "Placeholder",
     "author": "Tilles",
@@ -12,6 +12,7 @@
         "!kubejs/modpackData/**",
         "kubejs/modpackData/*.txt",
         "!resourcepacks",
+        "config",
         "config"
     ],
     "server_overrides": [

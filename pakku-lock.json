@@ -1,0 +1,11 @@
+{
+    "target": "curseforge",
+    "mc_versions": [
+        "1.21.1"
+    ],
+    "loaders": {
+        "Neoforge": "",
+        "neoforge": "21.1.231"
+    },
+    "lockfile_version": 2
+}
