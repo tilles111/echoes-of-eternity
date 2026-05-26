@@ -1,0 +1,16 @@
+/kubejs persistent-data entity Tilles
+/kubejs persistent-data entity Tilles get
+/kubejs persistent-data entity Tilles get *
+/kjs reload server-scripts
+/kubejs persistent-data entity Tilles get *
+/kjs reload server-scripts
+/kubejs persistent-data entity Tilles get *
+/kubejs persistent-data entity Tilles remove *
+/kubejs persistent-data entity Tilles get *
+/kjs persistent-data entity Tilles get *
+/kjs reload server-scripts
+/kjs persistent-data entity Tilles get *
+/kjs reload server-scripts
+/kjs persistent-data entity Tilles get *
+/kubejs custom_command add_blight
+/kjs reload server-scripts
