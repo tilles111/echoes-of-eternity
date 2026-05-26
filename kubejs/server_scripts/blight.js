@@ -20,7 +20,7 @@ PlayerEvents.tick(event => {
             }
         }
     }
-    
+
     if (event.player.isCreative() == true) return
     
     // Biome based blight gain
@@ -49,32 +49,24 @@ PlayerEvents.tick(event => {
         event.player.potionEffects.add('minecraft:slowness', 20, 1)
         event.player.potionEffects.add('minecraft:weakness', 20, 1)
         event.player.potionEffects.add('minecraft:darkness', 50, 0)
-    } else {
-        if (curBlight >= 48000) {
-            event.player.potionEffects.add('spectrum:somnolence', 20, 0)
+    } else if (curBlight >= 48000) {
+        event.player.potionEffects.add('spectrum:somnolence', 20, 0)
         event.player.potionEffects.add('spectrum:life_drain', 50, 7)
-            event.player.potionEffects.add('minecraft:slowness', 20, 1)
-            event.player.potionEffects.add('minecraft:weakness', 20, 1)
-        } else {
-            if (curBlight >= 36000) {
-                event.player.potionEffects.add('spectrum:somnolence', 20, 0)
-                event.player.potionEffects.add('spectrum:life_drain', 50, 5)
-                event.player.potionEffects.add('minecraft:slowness', 20, 0)
-                event.player.potionEffects.add('minecraft:weakness', 20, 1)
-            } else {
-                if (curBlight >= 24000) {
-                    event.player.potionEffects.add('spectrum:somnolence', 20, 0)
-                    event.player.potionEffects.add('spectrum:life_drain', 50, 3)
-                    event.player.potionEffects.add('minecraft:slowness', 20, 0)
-                    event.player.potionEffects.add('minecraft:weakness', 20, 0)
-                } else {
-                    if (curBlight >= 12000) {
-                        event.player.potionEffects.add('spectrum:somnolence', 20, 0)
-                        event.player.potionEffects.add('spectrum:life_drain', 50, 1)
-                        event.player.potionEffects.add('minecraft:slowness', 20, 0)
-                    }
-                }
-            }
-        }
+        event.player.potionEffects.add('minecraft:slowness', 20, 1)
+        event.player.potionEffects.add('minecraft:weakness', 20, 1)
+    } else if (curBlight >= 36000) {
+        event.player.potionEffects.add('spectrum:somnolence', 20, 0)
+        event.player.potionEffects.add('spectrum:life_drain', 50, 5)
+        event.player.potionEffects.add('minecraft:slowness', 20, 0)
+        event.player.potionEffects.add('minecraft:weakness', 20, 1)
+    } else if (curBlight >= 24000) {
+        event.player.potionEffects.add('spectrum:somnolence', 20, 0)
+        event.player.potionEffects.add('spectrum:life_drain', 50, 3)
+        event.player.potionEffects.add('minecraft:slowness', 20, 0)
+        event.player.potionEffects.add('minecraft:weakness', 20, 0)
+    } else if (curBlight >= 12000) {
+        event.player.potionEffects.add('spectrum:somnolence', 20, 0)
+        event.player.potionEffects.add('spectrum:life_drain', 50, 1)
+        event.player.potionEffects.add('minecraft:slowness', 20, 0)
     }
 })
