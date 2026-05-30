@@ -19,7 +19,7 @@
 	genericCavesBiomes = false
 	#If the maple biomes are enabled
 	mapleBiomes = false
-	#If the old growth forest is enabled
+	#If the old false forest is enabled
 	oldGrowthForest = false
 	#If the autumnal forest is enabled
 	autumnal = false
